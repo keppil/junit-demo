@@ -2,7 +2,6 @@ package com.volvocars.demo.junitdemo;
 
 import static org.junit.Assert.assertEquals;
 
-import org.apache.commons.lang.math.NumberUtils;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -30,9 +29,9 @@ public class TemperatureConverterTest {
     }
 
     @Test
-    public void fahrenHeitToCelsiusReturns0For32() {
-        Integer actual = converter.fahrenheitToCelsius(32);
-        Integer expected = NumberUtils.INTEGER_ZERO;
+    public void fahrenHeitToCelsiusReturnsMinus18For32() {
+        Integer actual = converter.fahrenheitToCelsius(0);
+        Integer expected = new Integer(-18);
         assertEquals(expected, actual);
     }
 
