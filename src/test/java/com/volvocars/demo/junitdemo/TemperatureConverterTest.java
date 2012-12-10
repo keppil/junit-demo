@@ -29,7 +29,7 @@ public class TemperatureConverterTest {
     }
 
     @Test
-    public void fahrenHeitToCelsiusReturnsMinus18For32() {
+    public void fahrenHeitToCelsiusReturnsMinus18For0() {
         Integer actual = converter.fahrenheitToCelsius(0);
         Integer expected = new Integer(-18);
         assertEquals(expected, actual);
