@@ -32,14 +32,14 @@ public class MKStringUtil {
      * @return A new {@link String} with the filtered content.
      */
     public static String filter(String stringToFilter, String filter) {
-        return stringToFilter.replaceAll(filter, "");
+        return stringToFilter.replace(filter, "");
     }
 
     /**
      * Checks if a {@link String} contains a valid numeric, in this definition either
      * <ul>
-     * <li>1 or more numbers <i>or</i></li>
-     * <li>0 or more numbers, followed by a dot (.), followed by 1 or more numbers.
+     * <li>1 or more digits <i>or</i></li>
+     * <li>0 or more digits, followed by a dot (.), followed by 1 or more digits.
      * </ul>
      * 
      * @param string
